@@ -1,3 +1,4 @@
+setwd("./documents/R/Coursera/EDA/EDA_Project2")
 ## This first line will likely take a few seconds. Be patient!
 if(!exists("NEI")){
   NEI <- readRDS("./data/summarySCC_PM25.rds")
@@ -19,7 +20,6 @@ coalMatches  <- grepl("coal", NEISCC$Short.Name, ignore.case=TRUE)
 subsetNEISCC <- NEISCC[coalMatches, ]
 
 aggregatedTotalByYear <- aggregate(Emissions ~ year, subsetNEISCC, sum)
-
 
 
 png("plot4.png", width=640, height=480)

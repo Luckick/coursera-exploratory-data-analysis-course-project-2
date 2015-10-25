@@ -1,3 +1,4 @@
+setwd("./documents/R/Coursera/EDA/EDA_Project2")
 ## This first line will likely take a few seconds. Be patient!
 if(!exists("NEI")){
   NEI <- readRDS("./data/summarySCC_PM25.rds")

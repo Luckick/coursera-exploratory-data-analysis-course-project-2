@@ -1,10 +1,11 @@
-## This first line will likely take a few seconds. Be patient!
+## load data
 if(!exists("NEI")){
   NEI <- readRDS("./data/summarySCC_PM25.rds")
 }
 if(!exists("SCC")){
   SCC <- readRDS("./data/Source_Classification_Code.rds")
 }
+
 # merge the two data sets 
 if(!exists("NEISCC")){
   NEISCC <- merge(NEI, SCC, by="SCC")

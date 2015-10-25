@@ -1,3 +1,4 @@
+setwd("./documents/R/Coursera/EDA/EDA_Project2")
 ## This first line will likely take a few seconds. Be patient!
 if(!exists("NEI")){
   NEI <- readRDS("./data/summarySCC_PM25.rds")
@@ -5,7 +6,6 @@ if(!exists("NEI")){
 if(!exists("SCC")){
   SCC <- readRDS("./data/Source_Classification_Code.rds")
 }
-
 library(ggplot2)
 
 # Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, 
